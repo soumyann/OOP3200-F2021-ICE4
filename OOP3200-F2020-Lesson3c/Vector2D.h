@@ -1,7 +1,15 @@
+/**
+ * Project:		  OOP3200-F2021-ICE 4
+ * Author:		  Tom Tsiliopoulos
+ * Modified by:   Soumya N.Narayananunni
+ * Last modified: Oct 08,2021
+ * version 1.0
+ */
+
+
 #pragma once
 #ifndef __VECTOR2D__
 #define __VECTOR2D__
-
 #include <iostream>
 #include <string>
 

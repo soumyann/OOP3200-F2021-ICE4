@@ -1,7 +1,16 @@
+/**
+ * Project:		  OOP3200-F2021-ICE 4
+ * Author:		  Tom Tsiliopoulos
+ * Modified by:   Soumya N.Narayananunni
+ * Last modified: Oct 08,2021
+ * version 1.0
+ */
+
+
+
 #pragma once
 #ifndef __MATH_F__
 #define __MATH_F__
-
 class Mathf
 {
 public:
@@ -55,7 +64,6 @@ public:
 	static float PingPong(float t, float length);
 	static float InverseLerp(float a, float b, float value);
 	static float DeltaAngle(float current, float target);
-	
 	
 private:
 };

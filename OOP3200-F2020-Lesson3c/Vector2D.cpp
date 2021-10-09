@@ -1,9 +1,15 @@
-#include "Vector2D.h"
+/**
+ * Project:		  OOP3200-F2021-ICE 4
+ * Author:		  Tom Tsiliopoulos
+ * Modified by:   Soumya N.Narayananunni
+ * Last modified: Oct 08,2021
+ * version 1.0
+ */
 
+#include "Vector2D.h"
 #include <iomanip>
 #include <string>
 #include <sstream>
-
 #include "Mathf.h"
 
 Vector2D::Vector2D(const float x, const float y) : m_x(x), m_y(y)
@@ -124,7 +130,6 @@ float& Vector2D::operator[](const int component)
 	}
 	throw std::out_of_range("index out of range: can only be 0 to return x or 1 to return y");
 }
-
 
 Vector2D& Vector2D::operator++()
 {

@@ -1,5 +1,12 @@
-#include "Mathf.h"
+/**
+ * Project:		  OOP3200-F2021-ICE 4
+ * Author:		  Tom Tsiliopoulos
+ * Modified by:   Soumya N.Narayananunni
+ * Last modified: Oct 08,2021
+ * version 1.0
+ */
 
+#include "Mathf.h"
 #include <limits>
 
 // math constants
@@ -167,10 +174,10 @@ float Mathf::Clamp(float value, const float min, const float max)
 
 int Mathf::Clamp(int value, const int min, const int max)
 {
-	if (value< min)
+	if (value < min)
 	{
 		value = min;
-	}	
+	}
 	else if (value > max)
 	{
 		value = max;
@@ -187,7 +194,7 @@ float Mathf::Clamp01(const float value)
 	if (static_cast<double>(value) > 1.0)
 	{
 		return 1.0f;
-	}	
+	}
 	return value;
 }
 
@@ -216,7 +223,7 @@ float Mathf::MoveTowards(const float current, const float target, const float ma
 	if (static_cast<double>(Mathf::Abs(target - current)) <= static_cast<double>(max_delta))
 	{
 		return target;
-	}	
+	}
 	return current + Mathf::Sign(target - current) * max_delta;
 }
 
@@ -255,7 +262,7 @@ float Mathf::InverseLerp(const float a, const float b, const float value)
 	{
 		return Mathf::Clamp01(static_cast<float>((static_cast<double>(value) - static_cast<double>(a)) / (static_cast<double>(b) - static_cast<
 			double>(a))));
-	}	
+	}
 	return 0.0f;
 }
 
